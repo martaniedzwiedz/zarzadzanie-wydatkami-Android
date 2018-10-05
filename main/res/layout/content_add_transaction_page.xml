@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:showIn="@layout/app_bar_add_transaction_page"
+    tools:context=".AddTransactionPage">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj nowy wydatek:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wybierz kategorię"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <EditText
+        android:id="@+id/transactionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:hint="Tytuł"/>
+
+    <EditText
+        android:id="@+id/transactionDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:hint="Komentarz"/>
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:hint="Kwota"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/DatePicker"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Data transakcji"
+        android:backgroundTint="#b1b1b1"
+        android:textColor="#000" />
+
+    <CheckBox android:id="@+id/checkbox_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:buttonTint="@color/pink"
+        android:text="Oznacz jako wydatek okresowy"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/bTransactionCancel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Anuluj"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/bTransactionAdd"
+            android:drawableRight="@drawable/ic_send_blackblack_24dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonoutlinestyleblack"
+            android:text="Stwórz"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

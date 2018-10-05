@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditUserPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/beditUsername"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:layout_width = "300dp"
+            android:layout_height = "wrap_content"
+            android:hint="Nazwa"
+            android:text = ""/>
+        <EditText
+            android:id="@+id/beditName"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Imię"
+            android:text=""/>
+        <EditText
+            android:id="@+id/beditLastName"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nazwisko"
+            android:text=""/>
+        <EditText
+            android:id="@+id/beditemail"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:text=""/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/bEditCancel"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonoutlinestyleblack"
+                android:layout_marginRight="10dp"
+                android:text="Anuluj"
+                android:textColor="#000"/>
+            <Button
+                android:id="@+id/bEdit"
+                android:drawableRight="@drawable/ic_send_white_24dp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/buttonstyle"
+                android:text="OK"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marta.testobserverv2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterPage" />
+        <activity android:name=".UserWaitingPage" />
+        <activity android:name=".UserSelectGroupPage" />
+        <activity android:name=".GroupJoinPage" />
+        <activity android:name=".GroupCreatePage" />
+        <activity
+            android:name=".UsersPage"
+            android:label="@string/title_activity_users_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AddTransactionPage"
+            android:label="@string/title_activity_qweq"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".GroupTransactionPage"
+            android:label="@string/title_activity_group_transaction_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserTransactionPage"
+            android:label="@string/title_activity_user_transaction_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ConstantTransactionPage"
+            android:label="@string/title_activity_constant_transaction_page"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".EditUserPage" />
+        <activity android:name=".UserDetailPage" />
+        <activity android:name=".TransactionDetailPage" />
+        <activity
+            android:name=".JoinRequestPage"
+            android:label="@string/title_activity_join_request_page"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".AddUserToGroupPage" />
+        <activity
+            android:name=".ReadCsvTransactionPage"
+            android:label="@string/title_activity_read_csv_transaction_page"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Chart" />
+        <activity
+            android:name=".GroupChartTransactionPage"
+            android:label="@string/title_activity_group_chart_transaction"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainMenuPage"
+            android:label="@string/title_activity_main_menu_page"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

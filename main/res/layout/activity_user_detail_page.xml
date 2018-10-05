@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text = "Informacje o użytkowniku:"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/username"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="użytkownik:"
+            android:textSize="17dp"
+            android:textColor="@color/black_overlay"/>
+        <TextView
+            android:id="@+id/dusername"
+            android:layout_marginLeft="5dp"
+            android:textSize="17dp"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/asdname"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:textSize="17dp"
+            android:text="imię:"
+            android:textColor="@color/black_overlay"/>
+        <TextView
+            android:id="@+id/dname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:text="nazwisko:"
+            android:textColor="@color/black_overlay"/>
+        <TextView
+            android:id="@+id/dlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:text="email:"
+            android:textColor="@color/black_overlay"/>
+        <TextView
+            android:id="@+id/demail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bClose"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Zamknij"
+        android:textColor="#fff"/>
+
+
+</LinearLayout>
